@@ -52,7 +52,7 @@ def ask():
     # Regular chatbot interaction
     bot_response = get_chatbot_response(user_message)
     return jsonify({"user": user_message, "bot": bot_response})
+    if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000, debug=True)
 
-if __name__ == "__main__":
-    app.run(debug=True)
 
